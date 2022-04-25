@@ -1,0 +1,50 @@
+// The function
+var background_image_parallax = function($object, multiplier){
+  multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+multiplier = 1 - multiplier;
+  var $doc = $(document);
+  $object.css({"background-attatchment" : "fixed"});
+$(window).scroll(function(){
+  var from_top = $doc.scrollTop(),
+      bg_css = '0px ' +(multiplier * from_top) + 'px';
+  $object.css({"background-position" : bg_css });
+  });
+};
+
+var adjustImageToFitScreen = function($object){
+	var windowSize = window.innerWidth;
+	$object.css({"background-size" : windowSize+ 'px auto' });
+}
+
+//Just pass the jQuery object
+background_image_parallax($(".home_bg_1"), .7);
+
+//optional second value for speed
+background_image_parallax($(".home_bg_2"), 0.6);
+
+//optional second value for speed
+background_image_parallax($(".home_bg_3"), 0.4);
+
+background_image_parallax($(".home_bg_4"), 0.25);
+
+background_image_parallax($(".home_bg_5"), 0.20);
+
+background_image_parallax($(".home_bg_6"), 0.15);
+
+background_image_parallax($(".home_bg_7"), 0.10);
+
+background_image_parallax($(".home_bg_8"), 0.08);
+
+//optional second value for speed
+background_image_parallax($(".home_bg_Sky"), 0.05);
+
+adjustImageToFitScreen($(".home_bg_1"));
+adjustImageToFitScreen($(".home_bg_2"));
+adjustImageToFitScreen($(".home_bg_3"));
+adjustImageToFitScreen($(".home_bg_4"));
+adjustImageToFitScreen($(".home_bg_5"));
+adjustImageToFitScreen($(".home_bg_6"));
+adjustImageToFitScreen($(".home_bg_7"));
+adjustImageToFitScreen($(".home_bg_8"));
+adjustImageToFitScreen($(".home_bg_sky"));
+adjustImageToFitScreen($(".home_fg_couple"));

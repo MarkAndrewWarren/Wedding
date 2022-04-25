@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC);
+body {
+  font-family: "Bowlby One SC", sans-serif;
+  height:5000px;
+  padding:0px;
+  margin:0px;
+}
+
+.boxTitle{
+	position: absolute;
+	top:100px;
+	Left:100px;
+	font-size:18pt;
+}
+
+
+/*US Section 
+*******************/
+.Us_bg_fg_1 {
+  
+  float: left;
+  background-image: url("../images/mnts.jpg");
+  background-size: 1200px;
+  height:1080px;
+  width:1200px;
+  position: sticky;
+  top:-750px;
+  left:200px;
+}
+
+
+.Us_bg_Mnt_1 {
+  
+  float: left;
+  background-image: url("../images/Us/Us_bg_Mnt_1.png");
+  height:1080px;
+  width:1200px;
+  position: absolute;
+}
+
+.Us_bg_Mnt_2 {
+  
+  float: left;
+  background-image: url("../images/Us/Us_bg_Mnt_2.png");
+  height:1080px;
+  width:1200px;
+  position: absolute;
+}
+
+.Us_bg_Mnt_3 {
+  
+  float: left;
+  background-image: url("../images/Us/Us_bg_Mnt_3.png");
+  height:1080px;
+  width:1200px;
+  position: absolute;
+}
+
+.Us_bg_Sky {
+  float: left;
+  background-image: url("../images/Us/Us_bg_Sky.png");
+  height:1080px;
+  width:1200px;
+   position: absolute;
+
+}
+
+/*home Section 
+*******************/
+
+.home_fg_couple {
+  
+  float: left;
+  background-image: url("../images/home/fg_couple.png");
+  height:1055px;
+  width:2400px;
+  position: sticky;
+  background-repeat: no-repeat;
+  background-position-y: 385px;
+}
+
+.home_bg_1 {
+  
+  float: left;
+  background-image: url("../images/home/bg_1.png");
+  background-repeat: no-repeat;
+  height:1055px;
+  width:2400px;
+  position: absolute;
+}
+
+.home_bg_2 {
+  
+  float: left;
+  background-image: url("../images/home/bg_2.png");
+  background-repeat: no-repeat;
+  height:1055px;
+  width:2400px;
+  position: absolute;
+}
+
+.home_bg_3 {
+  
+  float: left;
+  background-image: url("../images/home/bg_3.png");
+  background-repeat: no-repeat;
+  height:1055px;
+  width:2400px;
+  position: absolute;
+}
+
+.home_bg_4 {
+  
+  float: left;
+  background-image: url("../images/home/bg_4.png");
+  background-repeat: no-repeat;
+  height:1055px;
+  width:2400px;
+  position: absolute;
+}
+
+.home_bg_5 {
+  
+  float: left;
+  background-image: url("../images/home/bg_5.png");
+  background-repeat: no-repeat;
+  height:1055px;
+  width:2400px;
+  position: absolute;
+}
+
+.home_bg_6 {
+  
+  float: left;
+  background-image: url("../images/home/bg_6.png");
+  background-repeat: no-repeat;
+  height:1055px;
+  width:2400px;
+  position: absolute;
+}
+
+.home_bg_7 {
+  
+  float: left;
+  background-image: url("../images/home/bg_7.png");
+  background-repeat: no-repeat;
+  height:1055px;
+  width:2400px;
+  position: absolute;
+}
+
+.home_bg_8 {
+  
+  float: left;
+  background-image: url("../images/home/bg_8.png");
+  background-repeat: no-repeat;
+  height:1055px;
+  width:2400px;
+  position: absolute;
+}
+
+.home_bg_Sky {
+  float: left;
+  background-image: url("../images/home/bg_Sky.png");
+  background-repeat: no-repeat;
+  height:1055px;
+  width:2400px;
+  position: absolute;
+
+}
+
+
+h1 {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background: #F1C40F;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+}
+
