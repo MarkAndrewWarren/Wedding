@@ -14,9 +14,9 @@ body {
 }
 
 
-/*US Section 
+/*us Section 
 *******************/
-.Us_bg_fg_1 {
+.us_bg_fg_1 {
   
   float: left;
   background-image: url("../images/mnts.jpg");
@@ -29,36 +29,36 @@ body {
 }
 
 
-.Us_bg_Mnt_1 {
+.us_bg_Mnt_1 {
   
   float: left;
-  background-image: url("../images/Us/Us_bg_Mnt_1.png");
+  background-image: url("../images/us/us_bg_Mnt_1.png");
   height:1080px;
   width:1200px;
   position: absolute;
 }
 
-.Us_bg_Mnt_2 {
+.us_bg_Mnt_2 {
   
   float: left;
-  background-image: url("../images/Us/Us_bg_Mnt_2.png");
+  background-image: url("../images/us/us_bg_Mnt_2.png");
   height:1080px;
   width:1200px;
   position: absolute;
 }
 
-.Us_bg_Mnt_3 {
+.us_bg_Mnt_3 {
   
   float: left;
-  background-image: url("../images/Us/Us_bg_Mnt_3.png");
+  background-image: url("../images/us/us_bg_Mnt_3.png");
   height:1080px;
   width:1200px;
   position: absolute;
 }
 
-.Us_bg_Sky {
+.us_bg_Sky {
   float: left;
-  background-image: url("../images/Us/Us_bg_Sky.png");
+  background-image: url("../images/us/us_bg_Sky.png");
   height:1080px;
   width:1200px;
    position: absolute;
