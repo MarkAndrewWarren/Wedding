@@ -1,7 +1,10 @@
+//debugger;
 var FgHeight = 2500;
 var FgIconHeight = 2000;
+var ratio =  window.innerWidth/2400;
+var bg_top = 830 * ratio;
 
-var bg_top = 650;
+
 // The function
 var background_image_parallax = function($object, multiplier){
   multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
@@ -16,27 +19,15 @@ $(window).scroll(function(){
         $object.offset({ top: 0, left: $object.offset().left });
       }
       else{
-        $object.offset({ top: from_top - bg_top, left: $object.offset().left });
+        $object.offset({ top: (from_top - bg_top), left: $object.offset().left });
       }
 
   });
 };
 
-var fixSticky = function($object, multiplier){
-  
-  var $doc = $(document);
-$(window).scroll(function(){
-  var from_top = $doc.scrollTop();
-  var fg_height = $object.height();
-  var fg_ratio = fg_height / FgHeight;
-
-  if (from_top > (fg_ratio * FgIconHeight)){
-    
-  }
-  debugger;
-      bg_css = '0px ' +(multiplier * from_top) + 'px';
-  $object.css({"background-position" : bg_css });
-  });
+var fixFg = function($object){  
+  $object.offset({ top: (-1 * bg_top), left: $object.offset().left});
+  $object.css({"background-position-y" : (500 * ratio) + 'px' });
 };
 
 var adjustImageToFitScreen = function($object){
@@ -44,7 +35,7 @@ var adjustImageToFitScreen = function($object){
 	$object.css({"background-size" : windowSize+ 'px auto' });
   $object.width(windowSize);
 
-  $object.height(windowSize/2400 * 1055);
+  $object.height(ratio * 1055);
 }
 
 //Just pass the jQuery object
@@ -80,3 +71,4 @@ adjustImageToFitScreen($(".home_bg_8"));
 adjustImageToFitScreen($(".home_bg_sky"));
 
 adjustImageToFitScreen($(".home_fg_couple"));
+fixFg($(".home_fg_couple"));

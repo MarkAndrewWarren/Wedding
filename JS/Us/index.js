@@ -12,13 +12,13 @@ $(window).scroll(function(){
 };
 
 //Just pass the jQuery object
-background_image_parallax($(".Us_bg_Mnt_1"), .6);
+background_image_parallax($(".us_bg_Mnt_1"), .6);
 
 //optional second value for speed
-background_image_parallax($(".Us_bg_Mnt_2"), 0.45);
+background_image_parallax($(".us_bg_Mnt_2"), 0.45);
 
 //optional second value for speed
-background_image_parallax($(".Us_bg_Mnt_3"), 0.20);
+background_image_parallax($(".us_bg_Mnt_3"), 0.20);
 
 //optional second value for speed
-background_image_parallax($(".Us_bg_Sky"), 0.05);
+background_image_parallax($(".us_bg_Sky"), 0.05);
