@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC);
 body {
-  font-family: "Bowlby One SC", sans-serif;
-  height:5000px;
+ height:5000px;
   padding:0px;
   margin:0px;
 }
@@ -15,6 +14,31 @@ body {
 
 .main-content{
   min-height:5000px;
+}
+
+.sub-content{
+  position: sticky;
+  align-content: center;
+  width:100%;
+}
+
+
+.menu-header{
+  width: 100%;
+}
+
+.menu-center{
+  margin:0 auto;
+  width:30%
+}
+
+
+
+.menu-item{
+  float: left;
+  font-size:16pt;
+  margin:0 auto;
+  width:25%;
 
 }
 

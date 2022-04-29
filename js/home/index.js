@@ -30,6 +30,11 @@ var fixFg = function($object){
   $object.css({"background-position-y" : (500 * ratio) + 'px' });
 };
 
+var fixSub = function($object){  
+  $object.offset({ top: (-1 * bg_top), left: $object.offset().left});
+  $object.css({"background-position-y" : (600 * ratio) + 'px' });
+};
+
 var adjustImageToFitScreen = function($object){
 	var windowSize = window.innerWidth;
 	$object.css({"background-size" : windowSize+ 'px auto' });
@@ -72,3 +77,4 @@ adjustImageToFitScreen($(".home_bg_sky"));
 
 adjustImageToFitScreen($(".home_fg_couple"));
 fixFg($(".home_fg_couple"));
+fixSub($(".sub-content"));
