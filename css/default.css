@@ -27,6 +27,7 @@ body {
   width: 100%;
   background-image: url("../images/menu_drp_sdw.png");
   background-repeat: repeat-x;
+  min-height:100px;
 }
 
 .menu-center{
