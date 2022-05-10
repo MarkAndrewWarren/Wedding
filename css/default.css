@@ -28,11 +28,12 @@ body {
   background-image: url("../images/menu_drp_sdw.png");
   background-repeat: repeat-x;
   min-height:100px;
+  margin-top: -1px;
 }
 
 .menu-center{
   margin:0 auto;
-  width:40%;
+  width:60%;
 }
 
 
@@ -40,7 +41,7 @@ body {
 .menu-item{
   float: left;
   margin:0 auto;
-  font-size:32pt;
+  font-size:24pt;
 }
 
 .menu-us{
