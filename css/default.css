@@ -32,18 +32,33 @@ body {
 
 .menu-center{
   margin:0 auto;
-  width:30%;
+  width:40%;
 }
 
 
 
 .menu-item{
   float: left;
-  font-size:16pt;
   margin:0 auto;
-  width:25%;
-  font-size: 24pt;
+  font-size:24pt;
 }
+
+.menu-us{
+  width: 10%;
+}
+
+.menu-rsvp{
+  width: 20%;
+}
+
+.menu-info{
+  width: 35%;
+}
+
+.menu-where{
+  width: 35%;
+}
+
 
 /*us Section 
 *******************/

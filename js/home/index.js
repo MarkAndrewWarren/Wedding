@@ -50,7 +50,7 @@ background_image_parallax($(".home_bg_1"), .7);
 background_image_parallax($(".home_bg_2"), 0.5);
 
 //optional second value for speed
-background_image_parallax($(".home_bg_3"), 0.4);
+background_image_parallax($(".home_bg_3"), 0.39);
 
 background_image_parallax($(".home_bg_4"), 0.35);
 
