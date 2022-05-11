@@ -20,8 +20,8 @@ body {
   position: sticky;
   align-content: center;
   width:100%;
+  z-index: 110;
 }
-
 
 .menu-header{
   width: 100%;
@@ -35,8 +35,6 @@ body {
   margin:0 auto;
   width:60%;
 }
-
-
 
 .menu-item{
   float: left;
@@ -123,7 +121,7 @@ body {
   width:2400px;
   position: sticky;
   background-repeat: no-repeat;
-  
+  z-index:110;  
 }
 
 .home_bg_1 {
@@ -134,7 +132,7 @@ body {
   height:1055px;
   width:2400px;
   position: absolute;
-  border: 1px black solid;
+  z-index:109;
 }
 
 .home_bg_2 {
@@ -145,6 +143,7 @@ body {
   height:1055px;
   width:2400px;
   position: absolute;
+  z-index:108;
 }
 
 .home_bg_3 {
@@ -155,6 +154,7 @@ body {
   height:1055px;
   width:2400px;
   position: absolute;
+  z-index:107;
 }
 
 .home_bg_4 {
@@ -165,6 +165,7 @@ body {
   height:1055px;
   width:2400px;
   position: absolute;
+  z-index:106;
 }
 
 .home_bg_5 {
@@ -175,6 +176,7 @@ body {
   height:1055px;
   width:2400px;
   position: absolute;
+  z-index:105;
 }
 
 .home_bg_6 {
@@ -185,6 +187,7 @@ body {
   height:1055px;
   width:2400px;
   position: absolute;
+  z-index:104;
 }
 
 .home_bg_7 {
@@ -195,6 +198,7 @@ body {
   height:1055px;
   width:2400px;
   position: absolute;
+  z-index:103;
 }
 
 .home_bg_8 {
@@ -205,6 +209,7 @@ body {
   height:1055px;
   width:2400px;
   position: absolute;
+  z-index:102;
 }
 
 .home_bg_Sky {
@@ -214,6 +219,7 @@ body {
   height:1055px;
   width:2400px;
   position: absolute;
+  z-index:101;
 
 }
 
