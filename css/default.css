@@ -33,7 +33,7 @@ body {
 
 .menu-center{
   margin:0 auto;
-  width:60%;
+  width:80%;
 }
 
 .menu-item{
@@ -42,76 +42,35 @@ body {
   font-size:24pt;
 }
 
+.menu-spacer{
+  width:10%
+}
+
 .menu-us{
-  width: 10%;
+  font-size: 24pt;
 }
 
 .menu-rsvp{
-  width: 20%;
+  font-size: 24pt;
 }
 
 .menu-info{
-  width: 35%;
+  font-size: 24pt;
 }
 
 .menu-where{
-  width: 35%;
+  font-size: 24pt;
 }
 
-
-/*us Section 
-*******************/
-.us_bg_fg_1 {
-  
-  float: left;
-  background-image: url("../images/mnts.jpg");
-  background-size: 1200px;
-  height:1080px;
-  width:1200px;
-  position: sticky;
-  top:-750px;
-  left:200px;
-}
-
-
-.us_bg_Mnt_1 {
-  
-  float: left;
-  background-image: url("../images/us/us_bg_Mnt_1.png");
-  height:1080px;
-  width:1200px;
-  position: absolute;
-}
-
-.us_bg_Mnt_2 {
-  
-  float: left;
-  background-image: url("../images/us/us_bg_Mnt_2.png");
-  height:1080px;
-  width:1200px;
-  position: absolute;
-}
-
-.us_bg_Mnt_3 {
-  
-  float: left;
-  background-image: url("../images/us/us_bg_Mnt_3.png");
-  height:1080px;
-  width:1200px;
-  position: absolute;
-}
-
-.us_bg_Sky {
-  float: left;
-  background-image: url("../images/us/us_bg_Sky.png");
-  height:1080px;
-  width:1200px;
-   position: absolute;
-
-}
 
 /*home Section 
 *******************/
+
+.img_title {
+  position: absolute;
+  bottom: 0px;
+  right: 50px;
+}
 
 .home_fg_couple {
   

@@ -13,7 +13,7 @@ if(window.mobileCheck())
 var FgHeight = 2500;
 var FgIconHeight = 2000;
 var ratio =  windowSize/2400;
-var bg_top = 830 * ratio;
+var bg_top = 800 * ratio;
 
 
 // The function
@@ -53,6 +53,14 @@ var adjustImageToFitScreen = function($object){
   $object.height(ratio * 1055);
 }
 
+var adjustTitleToFitScreen = function($object){
+  $object.height(ratio  * $object.height());
+}
+
+var adjustMenuToFitScreen = function($object){
+  $object.width((60 / (ratio* 1.7))  + '%' );
+}
+
 //Just pass the jQuery object
 background_image_parallax($(".home_bg_1"), .7);
 
@@ -84,6 +92,9 @@ adjustImageToFitScreen($(".home_bg_6"));
 adjustImageToFitScreen($(".home_bg_7"));
 adjustImageToFitScreen($(".home_bg_8"));
 adjustImageToFitScreen($(".home_bg_sky"));
+
+adjustTitleToFitScreen($("#img_title"));
+adjustMenuToFitScreen($(".menu-center"));
 
 adjustImageToFitScreen($(".home_fg_couple"));
 fixFg($(".home_fg_couple"));
