@@ -61,6 +61,10 @@ var adjustMenuToFitScreen = function($object){
   $object.width((60 / (ratio* 1.7))  + '%' );
 }
 
+var adjustHeightToFitScreen = function($bg, $img){
+  $bg.css('min-height', $img.height() + (900 * ratio));
+}
+
 //Just pass the jQuery object
 background_image_parallax($(".home_bg_1"), .7);
 
@@ -99,3 +103,5 @@ adjustMenuToFitScreen($(".menu-center"));
 adjustImageToFitScreen($(".home_fg_couple"));
 fixFg($(".home_fg_couple"));
 fixSub($(".sub-content"));
+
+adjustHeightToFitScreen($(".main-content"), $(".home_bg_1"));
