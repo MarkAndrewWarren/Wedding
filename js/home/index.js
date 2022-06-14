@@ -72,11 +72,11 @@ background_image_parallax($(".home_bg_1"), .7);
 background_image_parallax($(".home_bg_2"), 0.5);
 
 //optional second value for speed
-background_image_parallax($(".home_bg_3"), 0.39);
+background_image_parallax($(".home_bg_3"), 0.45);
 
-background_image_parallax($(".home_bg_4"), 0.35);
+background_image_parallax($(".home_bg_4"), 0.37);
 
-background_image_parallax($(".home_bg_5"), 0.30);
+background_image_parallax($(".home_bg_5"), 0.31);
 
 background_image_parallax($(".home_bg_6"), 0.25);
 
@@ -100,8 +100,7 @@ adjustImageToFitScreen($(".home_bg_sky"));
 adjustTitleToFitScreen($("#img_title"));
 adjustMenuToFitScreen($(".menu-center"));
 
-adjustImageToFitScreen($(".home_fg_couple"));
-fixFg($(".home_fg_couple"));
+
 fixSub($(".sub-content"));
 
 adjustHeightToFitScreen($(".main-content"), $(".home_bg_1"));

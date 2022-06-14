@@ -68,7 +68,29 @@ body {
 .home_fg_couple {
   
   float: left;
-  background-image: url("../images/home/fg_couple.png");
+  background-image: url("../images/home/fg_couple2.png");
+  height:1055px;
+  width:2400px;
+  position: sticky;
+  background-repeat: no-repeat;
+  z-index:111;  
+}
+
+.home_fg_us {
+  
+  float: left;
+  background-image: url("../images/home/fg_us.png");
+  height:1055px;
+  width:2400px;
+  position: sticky;
+  background-repeat: no-repeat;
+  z-index:111;  
+}
+
+.home_fg_arc {
+  
+  float: left;
+  background-image: url("../images/home/fg_arc.png");
   height:1055px;
   width:2400px;
   position: sticky;
