@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC);
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
 body { 
   padding:0px;
   margin:0px;
@@ -24,9 +25,9 @@ body {
 
 .menu-header{
   width: 100%;
-  background-image: url("../images/menu_drp_sdw.png");
+  background-image: url("../images/menu_bg.png");
   background-repeat: repeat-x;
-  min-height:100px;
+  min-height:55px;
   margin-top: -1px;
 }
 
@@ -46,12 +47,18 @@ body {
 .menu-item a{
   color: black; /* blue colors for links too */
   text-decoration: none; /* no underline */
+  font-size:26pt;
+  font-family: 'Raleway'; 
 }
 
 .menu-spacer{
   width:10%
 }
 
+.page-header{
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
 
 
 
