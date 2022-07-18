@@ -65,6 +65,13 @@ var adjustHeightToFitScreen = function($bg, $img){
   $bg.css('min-height', $img.height() + (900 * ratio));
 }
 
+var convertToMobile = function(amount, $object){
+  if(window.mobileCheck()){
+    amount = amount * 1.7; 
+    $object.css('min-height', amount);
+  }
+}
+
 //Just pass the jQuery object
 background_image_parallax($(".home_bg_1"), .7);
 
