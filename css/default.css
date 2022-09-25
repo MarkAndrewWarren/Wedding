@@ -34,6 +34,7 @@ body {
 .menu-center{
   margin:0 auto;
   width:80%;
+  background-color: white;;
 }
 
 .menu-item{
@@ -51,16 +52,40 @@ body {
   font-family: 'Raleway'; 
 }
 
+.menu-sub-item{
+  float: left;
+  margin:0 auto;
+  font-size:18pt;
+  font-family: 'Raleway', sans-serif; 
+  padding-top: 10px;
+  background-color: white;;
+}
+
+.menu-sub-item a{
+  color: black; /* blue colors for links too */
+  text-decoration: none; /* no underline */
+  font-size:18pt;
+  font-family: 'Raleway'; 
+  background-color: white;
+}
+
 .menu-spacer{
   width:10%
+}
+.menu-sub-spacer{
+  width:5%
 }
 
 .page-header{
   font-family: var(--font-secondary);
   font-weight: 700;
+  font-size: 22pt;
 }
 
-
+.page-sub-header{
+  font-size: 18pt;
+  font-weight: bold;
+}
 
 /*home Section 
 *******************/
@@ -226,3 +251,31 @@ h1 {
   box-sizing: border-box;
 }
 
+
+/*Schedule Section 
+*******************/
+
+.schedule-date{
+  float:left;
+  width:20%;
+}
+
+.schedule-info{
+  float:left;
+  width:80%;
+}
+
+.schedule-time{
+  float:left;
+  width:20%;
+}
+
+
+.schedule-item{
+  float:left;
+  width:80%;
+}
+
+.schedule-info-row{
+  margin-bottom: 15px;
+}
