@@ -31,6 +31,14 @@ body {
   margin-top: -1px;
 }
 
+.menu-header-travel{
+  width: 100%;
+  background-image: url("../images/menu_travel_bg.png");
+  background-repeat: repeat-x;
+  min-height:100px;
+  margin-top: -1px;
+}
+
 .menu-center{
   margin:0 auto;
   width:80%;
