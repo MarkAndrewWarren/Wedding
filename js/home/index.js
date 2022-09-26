@@ -72,6 +72,13 @@ var convertToMobile = function(amount, $object){
   }
 }
 
+var adjustTopMarginMobile = function(amount, $object){
+  if(window.mobileCheck()){
+    amount = amount * .75; 
+    $object.css('margin-top', amount);
+  }
+}
+
 //Just pass the jQuery object
 background_image_parallax($(".home_bg_1"), .7);
 
@@ -111,3 +118,4 @@ adjustMenuToFitScreen($(".menu-center"));
 fixSub($(".sub-content"));
 
 adjustHeightToFitScreen($(".main-content"), $(".home_bg_1"));
+
