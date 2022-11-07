@@ -254,6 +254,7 @@ function setResults(result){
     $("#mainThankYouAttending").addClass("hidden");
     $("#mainSorry").addClass("hidden");
     $('#mainError').addClass("hidden");
+    $('#img_rsvpTitle').addClass("hidden");
 
     if(result == "coming"){
         $("#mainThankYouAttending").removeClass("hidden");
@@ -268,7 +269,8 @@ function setResults(result){
         jump("jumpRSVP");
     }
     else{
-        $("#mainForm").removeClass("hidden");
+        $("#mainForm").removeClass("hidden");        
+        $('#img_rsvpTitle').removeClass("hidden");
     }
 }
 

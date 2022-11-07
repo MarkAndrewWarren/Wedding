@@ -1,10 +1,11 @@
 adjustImageToFitScreen($(".home_fg_us"));
 fixFg($(".home_fg_us"));
 
-convertToMobile(450, $("#howWeMet"));
-convertToMobile(325, $("#firstDate"));
-convertToMobile(270, $("#firstTrip"));
-convertToMobile(300, $("#covid"));
-convertToMobile(250, $("#spain"));
-convertToMobile(300, $("#engaged"));
-convertToMobile(200, $("#runUp"));
+convertToMobile(100, $("#howWeMet"));
+convertToMobile(100, $("#firstDate"));
+convertToMobile(100, $("#firstTrip"));
+convertToMobile(100, $("#covid"));
+convertToMobile(100, $("#spain"));
+convertToMobile(100, $("#engaged"));
+convertToMobile(100, $("#runUp"));
+
