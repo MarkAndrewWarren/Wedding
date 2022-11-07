@@ -257,14 +257,22 @@ function setResults(result){
 
     if(result == "coming"){
         $("#mainThankYouAttending").removeClass("hidden");
+        jump("jumpRSVP");
     }
     else if (result == "not"){
         $("#mainSorry").removeClass("hidden");
+        jump("jumpRSVP");
     }
     else if (result == "error"){
         $("#mainError").removeClass("hidden");
+        jump("jumpRSVP");
     }
     else{
         $("#mainForm").removeClass("hidden");
     }
+}
+
+function jump(h){
+    var top = document.getElementById(h).offsetTop; //Getting Y of target element
+    window.scrollTo(0, top);                        //Go there directly or some transition
 }
