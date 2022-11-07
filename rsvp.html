@@ -1,69 +1,182 @@
 <html>
-<head>
-    
-	<link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/timeline.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      
-</head>
-<body>
-    <div class="main-content">
-        <div class='home_bg_Sky' id='home_bg_Sky'>
-        </div>
-        <div class='home_bg_8' id='home_bg_8'>
-        </div>
-        <div class='home_bg_7' id='home_bg_7'>
-        </div>
-        <div class='home_bg_6' id='home_bg_6'>
-        </div>
-        <div class='home_bg_5' id='home_bg_5'>
-        </div>
-        <div class='home_bg_4' id='home_bg_4'>
-        </div>
-        <div class='home_bg_3' id='home_bg_3'>
-        </div>
-        <div class='home_bg_2' id='home_bg_2'>
-        </div>
-        <div class='home_bg_1' id='home_bg_1'>
-        </div>
 
-        <div class='home_fg_couple' id='home_fg_couple'>
-          <img id="img_title" class="img_title" src="images/home/txt_title.png" onclick="window.location.href = 'index.html'" />
-        </div>
-        <div class="sub-content">
-            <img style="width:1px; height:1px;" />
-            <div class="menu-header">                
-                <div class="menu-center">                    
-                    <div class="menu-item menu-us" >
-                        <a href="us.html">Us</a> 
-                    </div>
-                    <div class="menu-item menu-spacer">&nbsp;</div>                    
-                    <div class="menu-item menu-rsvp">
-                      <a href="rsvp.html">RSVP</a> 
-                    </div>
-                    <div class="menu-item menu-spacer">&nbsp;</div>
-                    <div class="menu-item menu-schedule">
-                      <a href="schedule.html">Schedule</a> 
-                    </div>
-                    <div class="menu-item menu-spacer">&nbsp;</div>
-                    <div class="menu-item menu-travel">
-                      <a href="travel.html">Travel</a> 
-                    </div>
-                    <div class="menu-item menu-spacer">&nbsp;</div>
-                    <div class="menu-item menu-faq">
-                      <a href="faq.html">FAQ</a> 
-                    </div>
-                </div>
-            </div>
-        </div>    
-        <div class="container max-width-lg ">          
-          <div style="padding-top:50px; text-align:center;">
-            <img src="images/ComingSoonv2.png" />
+<head>
+
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/timeline.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="main-content">
+    <div class='home_bg_Sky' id='home_bg_Sky'>
+    </div>
+    <div class='home_bg_8' id='home_bg_8'>
+    </div>
+    <div class='home_bg_7' id='home_bg_7'>
+    </div>
+    <div class='home_bg_6' id='home_bg_6'>
+    </div>
+    <div class='home_bg_5' id='home_bg_5'>
+    </div>
+    <div class='home_bg_4' id='home_bg_4'>
+    </div>
+    <div class='home_bg_3' id='home_bg_3'>
+    </div>
+    <div class='home_bg_2' id='home_bg_2'>
+    </div>
+    <div class='home_bg_1' id='home_bg_1'>
+    </div>
+
+    <div class='home_fg_couple' id='home_fg_couple'>
+      <img id="img_title" class="img_title" src="images/home/txt_title.png"
+        onclick="window.location.href = 'index.html'" />
+    </div>
+    <div class="sub-content">
+      <img style="width:1px; height:1px;" />
+      <div class="menu-header">
+        <div class="menu-center">
+          <div class="menu-item menu-us">
+            <a href="us.html">Us</a>
+          </div>
+          <div class="menu-item menu-spacer">&nbsp;</div>
+          <div class="menu-item menu-rsvp">
+            <a href="rsvp.html">RSVP</a>
+          </div>
+          <div class="menu-item menu-spacer">&nbsp;</div>
+          <div class="menu-item menu-schedule">
+            <a href="schedule.html">Schedule</a>
+          </div>
+          <div class="menu-item menu-spacer">&nbsp;</div>
+          <div class="menu-item menu-travel">
+            <a href="travel.html">Travel</a>
+          </div>
+          <div class="menu-item menu-spacer">&nbsp;</div>
+          <div class="menu-item menu-faq">
+            <a href="faq.html">FAQ</a>
           </div>
         </div>
+      </div>
     </div>
-<script src="js/home/index.js"></script>
-<script src="js/home/couple.js"></script>
-<script src="js/timeline.js"></script>
+    <div style="text-align:center;">
+      <img src="images/RSVPv2.png" style="height: 350px" />
+    </div>
+    <div style="padding-bottom:100px;" class="container" id="topForm">
+      <div class="col-xs-12">
+        
+        <div id="mainForm" class="formMain">
+          <div style="text-align:left;">
+            <h2>Guest's Information</h2>
+          </div>
+          <div class="formQuestion" id="d_guest">
+            <label for="txt_guest">Who Are you?</label><br />
+            <input type="text" id="txt_guest" class="form-control" />
+          </div>
+          <div class="formQuestion" id="d_coming">
+            <label>Are you coming?</label><br />
+            <Label><input type="radio" name="rd_coming" id="rd_comingYes" onchange="checkForm()" value="1"  class="form-check-input"  />&nbsp;Yes</Label><br />
+            <label><input type="radio" name="rd_coming" id="rd_comingNo" onchange="checkForm()" value="0" class="form-check-input" />&nbsp;No</label><br />
+          </div>
+          <div id="dv_information" class="formSubSection hidden">
+            <div class="formQuestion" id="d_guestEmail">
+              <label for="txt_guestEmail">Contact Email?</label><br />
+              <input type="text" id="txt_guestEmail"  class="form-control"  />
+            </div>
+            <div class="formQuestion" id="d_guestEntree">
+              <label>What is your entree preference</label><br />
+              <label><input type="radio" name="rd_guestEntree" id="rd_guestEntreeBeef"  onchange="checkForm()"  class="form-check-input" >&nbsp;Braised Short Rib</label><br />
+              <label><input type="radio" name="rd_guestEntree" id="rd_guestEntreeChicken"  onchange="checkForm()" class="form-check-input"  >&nbsp;Chicken Roulade</label><br />
+              <label><input type="radio" name="rd_guestEntree" id="rd_guestEntreeRavioli"  onchange="checkForm()" class="form-check-input" >&nbsp;Mushroom Ravioli</label><br />
+              <label><input type="radio" name="rd_guestEntree" id="rd_guestEntreeDiet"  onchange="checkForm()" class="form-check-input" >&nbsp;Diet Restrictions</label><br />                 
+              <input type="text" id="txt_guestEntreeDiet"  class="hidden form-control">
+            </div>
+            <div class="formQuestion" id="d_guesPlus">
+              <label>Can your Spouce/Significatant other/Plus 1 join us?</label><br />
+              <label><input type="radio" name="rd_guestPlus" id="rd_guestPlusYes" onchange="checkForm()" class="form-check-input" >&nbsp;Yes</label><br />
+              <label><input type="radio" name="rd_guestPlus" id="rd_guestPlusNo" onchange="checkForm()" class="form-check-input" >&nbsp;No</label><br />          
+            </div>
+            <div class="formQuestion" id="d_guestWelcome">
+              <label>Are you coming to welcome dinner? (Fri 2-17 6pm)</label><br />
+              <label><input type="radio" name="rd_guestWelcome" id="rd_guestWelcomeYes" class="form-check-input" >&nbsp;Yes</label><br />
+              <label><input type="radio" name="rd_guestWelcome" id="rd_guestWelcomeNo" class="form-check-input" >&nbsp;No</label><br />          
+            </div>
+            <div class="formQuestion" id="d_guestChildren">
+              <label>Are you bringing children?</label><br />
+              <label><input type="radio" name="rd_guestChildren" id="rd_guestChildrenYes" onchange="checkForm()" class="form-check-input" >&nbsp;Yes</label><br />
+              <label><input type="radio" name="rd_guestChildren" id="rd_guestChildrenNo" onchange="checkForm()" class="form-check-input" >&nbsp;No</label><br />
+            </div>
+          </div>
+          <div id="dv_plus1Section" class="hidden formSection">
+            <div style="text-align:left;">
+              <h2>Spouce/Significatant other/Plus 1's Information</h2>
+            </div>
+            <div class="formQuestion" id="d_plus">
+              <label>Who is your plus 1?</label><br />
+              <input type="text" id="txt_plus" onchange="setPlusOne()" class="form-control"  />
+            </div>
+            <div class="formQuestion" id="d_plusEntree">
+              <label>What is <label id="sp_plusName"></label>'s entree preference</label><br />
+              <label><input type="radio" name="rd_plusEntree" id="rd_plusEntreeBeef"  onchange="checkForm()" class="form-check-input" >&nbsp;Braised Short Rib</label><br />
+              <label><input type="radio" name="rd_plusEntree" id="rd_plusEntreeChicken" onchange="checkForm()" class="form-check-input" >&nbsp;Chicken Roulade</label><br />
+              <label><input type="radio" name="rd_plusEntree" id="rd_plusEntreeRavioli" onchange="checkForm()" class="form-check-input" >&nbsp;Mushroom Ravioli </label><br />
+              <label><input type="radio" name="rd_plusEntree" id="rd_plusEntreeDiet" onchange="checkForm()" class="form-check-input" >&nbsp;Diet Restrictions</label><br />
+              <input type="text" id="txt_plusEntreeDiet" class="hidden form-control"><br />
+            </div>
+          </div>
+          <div id="dv_childrenSection" class="hidden formSection">
+            <div style="text-align:left;">
+              <h2>Children's Information</h2>
+            </div>
+            <div class="formQuestion" id="d_children">
+              <label for="ddl_children">How many Children?</label><br />
+              <select id="ddl_children"  class="form-control" >
+                <option value="">-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div class="formQuestion" id="d_childrenMeals">
+              <label for="ddl_childrenMeals">How many Children's Meals?</span><br />
+              <select id="ddl_childrenMeals"  class="form-control" >
+                <option value="">-</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+          <div style="padding-top:10px;">
+            <button id="btn_submit" value="Submit" onclick="submitForm()" class="btn-default page-sub-header">Submit</button><br />
+            <span id="sp_required" style="color:red;" class="hidden">Please fill in all required fields</span>
+          </div>
+        </div>
+        <div id="mainThankYouAttending" class="hidden" >
+          <img src="images/img_thankyou.png">
+        </div>
+        <div id="mainSorry" class="hidden">
+          <img src="images/img_sorry.png">
+        </div>
+        <div id="mainError"  class="hidden">
+          <h2>Error</h2> <br />
+          Something went wrong, please email me 
+          <u><a href="mailto:mark.michelle.218@gmail.com">Here</a></u> and let me know your responses. 
+        </div>
+        <div style="padding-top:500px; margin-top:500px;"></div>
+        
+      </div>
+    </div>
+    
+  </div>
+  <script src="js/home/index.js"></script>
+  <script src="js/home/couple.js"></script>
+  <script src="js/rsvp.js"></script>
 </body>
+
 </html>
